@@ -1,3 +1,3 @@
-# jekyll-base
+# Jekyll-base for my blog
 
-Fresh Jekyll install from running "jekyll new ..."
+Will contain About, Now pages, blog posts & other things. 
