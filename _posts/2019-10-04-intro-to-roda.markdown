@@ -131,19 +131,19 @@ The complete list of [bundled plugins](http://roda.jeremyevans.net/documentation
 
 ```ruby
 class Roda
-  moduleRodaPlugins
-    moduleMyPlugin
-      moduleClassMethods
+  module RodaPlugins
+    module MyPlugin
+      module ClassMethods
       end
-      moduleInstanceMethods
+      module InstanceMethods
       end
-      moduleRequestClassMethods
+      module RequestClassMethods
       end
-      moduleRequestMethods
+      module RequestMethods
       end
-      moduleResponseClassMethods
+      module ResponseClassMethods
       end
-      moduleResponseMethods
+      module ResponseMethods
       end
     end
     register_plugin(:my_plugin, MyPlugin)
