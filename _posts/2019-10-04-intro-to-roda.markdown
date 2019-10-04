@@ -18,14 +18,14 @@ require "roda"
 
 classApp < Roda
   plugin :render
-  plugin :all\_verbs
+  plugin :all_verbs
   route do |r|
     r.root do
       view :index
     end
-    r.is  "artist ", Integer do |artist\_id|
-      @artist = Artist[artist\_id]
-      check\_access(@artist)
+    r.is  "artist ", Integer do |artist_id|
+      @artist = Artist[artist_id]
+      check_access(@artist)
       r.get do
         view :artist
       end
@@ -58,8 +58,8 @@ More examples of the routing flexibility:
     end
     # Regexp matchers
     r.on  "users "do
-      r.get /(\d+)/do |user\_id|
-        "Your id is #{user\_id}"
+      r.get /(\d+)/do |user_id|
+        "Your id is #{user_id}"
       end
     end
   end
@@ -98,7 +98,7 @@ route do |r|
     [1, 2, 3]
   end
   r.is "foo"do
-    { "a "=\&gt; "b "}
+    { "a "=> "b "}
   end
 end
 ```
@@ -110,9 +110,9 @@ plugin :json, classes: [Array, Hash, ActiveRecord::Base, ActiveRecord::Relation]
   serializer: proc { |object|
     case object
     when Array, Hash
-      object.to\_json
+      object.to_json
     else
-      Serializer.new(object).as\_json
+      Serializer.new(object).as_json
     end
   }
 
@@ -145,7 +145,7 @@ class Roda
       moduleResponseMethods
       end
     end
-    register\_plugin(C:my\_plugin, MyPlugin)
+    register_plugin(:my_plugin, MyPlugin)
   end
 end
 ```
