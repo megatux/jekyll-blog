@@ -19,11 +19,12 @@ require "roda"
 class App < Roda
   plugin :render
   plugin :all_verbs
+
   route do |r|
     r.root do
       view :index
     end
-    r.is  "artist ", Integer do |artist_id|
+    r.is  "artist", Integer do |artist_id|
       @artist = Artist[artist_id]
       check_access(@artist)
       r.get do
@@ -35,7 +36,7 @@ class App < Roda
       end
       r.delete do
         @artist.destroy
-        r.redirect  "/ "
+        r.redirect  "/"
       end
     end
   end
@@ -49,16 +50,16 @@ More examples of the routing flexibility:
 ```ruby
   route do |r|
     # array matchers
-    r.on %w[hello hi]do |greeting|
+    r.on %w[hello hi] do |greeting|
       "#{greeting}, world!"
     end
     # method matchers
-    r.is  "hello ", method: [:post, :put, :patch] do
+    r.is  "hello", method: [:post, :put, :patch] do
       "All your base are belong to us"
     end
     # Regexp matchers
-    r.on  "users "do
-      r.get /(\d+)/do |user_id|
+    r.on  "users" do
+      r.get /(\d+)/ do |user_id|
         "Your id is #{user_id}"
       end
     end
@@ -75,8 +76,8 @@ For instance, wants [websockets](https://www.rubydoc.info/gems/roda/2.13.0/Roda/
 plugin :websockets
 
 route do |r|
-  r.get "room"do
-    # Matches if it "s a websocket request
+  r.get "room" do
+    # Matches if it's a websocket request
     r.websocket do |ws|
       ws.on(:message) { ... }
       ws.on(:close) { ... }
@@ -97,8 +98,8 @@ route do |r|
   r.root do
     [1, 2, 3]
   end
-  r.is "foo"do
-    { "a "=> "b "}
+  r.is "foo" do
+    { "a" => "b"}
   end
 end
 ```
@@ -117,10 +118,10 @@ plugin :json, classes: [Array, Hash, ActiveRecord::Base, ActiveRecord::Relation]
   }
 
 route do |r|
-  r.get "albums/recent"do
+  r.get "albums/recent" do
     Album.recent
   end
-  r.get "albums/:id"do |id|
+  r.get "albums/:id" do |id|
     Album.find(id)
   end
 end
@@ -178,5 +179,5 @@ _(Look Ma, no issues)_
 
 - This is a nice free [Roda book](https://fiachetti.gitlab.io/mastering-roda/).
 - The official [mailing list](https://groups.google.com/forum/#!forum/ruby-roda).
-- If you want to know more about this _plugin system pattern_, check [this post](https://twin.github.io/the-plugin-system-of-sequel-and-roda/) from the [Shrine](https://github.com/shrinerb/shrine) "s creator.
+- If you want to know more about this _plugin system pattern_, check [this post](https://twin.github.io/the-plugin-system-of-sequel-and-roda/) from the [Shrine](https://github.com/shrinerb/shrine)'s creator.
 - Other benchmarks: [ruby web frameworks micro benchmarks](https://github.com/luislavena/bench-micro) project, the famous [TechEmpower web benchmarks](https://www.techempower.com/benchmarks/#section=data-r18&amp;hw=ph&amp;test=json&amp;l=zijxtr-f) (filtered for Ruby frameworks) and also [this project](https://github.com/jeremyevans/r10k/).
