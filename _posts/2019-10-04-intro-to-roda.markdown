@@ -16,7 +16,7 @@ It is auto-defined as a "_Routing tree web toolkit_". Why is that? Because of th
 ```ruby
 require "roda"
 
-classApp < Roda
+class App < Roda
   plugin :render
   plugin :all_verbs
   route do |r|
