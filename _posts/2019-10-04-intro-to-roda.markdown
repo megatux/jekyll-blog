@@ -6,12 +6,12 @@ categories: ruby webdev
 ---
 ## Introduction
 
-There are several &quot;_lightweight_&quot; Ruby web &amp; API libraries out there.
+There are several "_lightweight_" Ruby web &amp; API libraries out there.
 _Sinatra_ is probably the most known but there are others that are newer, faster, cleaner, more flexible and/or better maintained.
 
 One of those is [_Roda_](https://roda.jeremyevans.net), created by Jeremy Evans, the creator of the Sequel gem. It started as a Cuba fork but then evolved a lot. It is specially notably by its speed and plugin system, shared characteristics with its sibling Sequel gem, where everything can be overridden.
 
-It is auto-defined as a &quot;_Routing tree web toolkit_&quot;. Why is that? Because of the way the routes are defined &amp; run. Let me show you an example:
+It is auto-defined as a "_Routing tree web toolkit_". Why is that? Because of the way the routes are defined &amp; run. Let me show you an example:
 
 ```ruby
 require "roda"
@@ -50,16 +50,16 @@ More examples of the routing flexibility:
   route do |r|
     # array matchers
     r.on %w[hello hi]do |greeting|
-      &quot;#{greeting}, world!&quot;
+      "#{greeting}, world!"
     end
     # method matchers
     r.is  "hello ", method: [:post, :put, :patch] do
-      &quot;All your base are belong to us&quot;
+      "All your base are belong to us"
     end
     # Regexp matchers
     r.on  "users "do
       r.get /(\d+)/do |user\_id|
-        &quot;Your id is #{user\_id}&quot;
+        "Your id is #{user\_id}"
       end
     end
   end
@@ -75,7 +75,7 @@ For instance, wants [websockets](https://www.rubydoc.info/gems/roda/2.13.0/Roda/
 plugin :websockets
 
 route do |r|
-  r.get &quot;room&quot;do
+  r.get "room"do
     # Matches if it "s a websocket request
     r.websocket do |ws|
       ws.on(:message) { ... }
@@ -83,7 +83,7 @@ route do |r|
       # ...
     end
     # If the request is not a websocket request, we render a template
-    view &quot;room&quot;
+    view "room"
   end
 end
 ```
@@ -97,7 +97,7 @@ route do |r|
   r.root do
     [1, 2, 3]
   end
-  r.is &quot;foo&quot;do
+  r.is "foo"do
     { "a "=\&gt; "b "}
   end
 end
@@ -115,11 +115,12 @@ plugin :json, classes: [Array, Hash, ActiveRecord::Base, ActiveRecord::Relation]
       Serializer.new(object).as\_json
     end
   }
+
 route do |r|
-  r.get &quot;albums/recent&quot;do
+  r.get "albums/recent"do
     Album.recent
   end
-  r.get &quot;albums/:id&quot;do |id|
+  r.get "albums/:id"do |id|
     Album.find(id)
   end
 end
