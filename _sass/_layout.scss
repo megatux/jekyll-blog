@@ -3,7 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px dotted $mega-section-separator-color;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -92,7 +92,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px dotted $mega-section-separator-color;
     padding: $spacing-unit 0;
 }
 
