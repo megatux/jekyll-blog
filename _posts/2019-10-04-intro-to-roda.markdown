@@ -68,7 +68,7 @@ More examples of the routing flexibility:
 
 Roda's plugin system design is shared with the Sequel gem but also copied in other projects, like in the [Shrine](https://shrinerb.com) file attachment toolkit, [Cuba(v3)](http://cyx.is/cuba-3-released.html).
 
-You can start with a small, compact core of an application and grow complexity over time and learning as you go, habing fine grained control on features and performance.
+You can start with a small, compact core of an application and grow complexity over time and learning as you go, having fine grained control on features and performance.
 
 For instance, wants [websockets](https://www.rubydoc.info/gems/roda/2.13.0/Roda/RodaPlugins/Websockets), checked:
 
