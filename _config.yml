@@ -8,6 +8,7 @@ url: "https://megatux.me" # the base hostname & protocol for your site
 twitter_username: megatux
 github_username:  megatux
 devto_username:  megatux
+linkedin_url:  https://www.linkedin.com/in/molinacristian/
 
 # Build settings
 markdown: kramdown
