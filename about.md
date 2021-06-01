@@ -8,4 +8,4 @@ Cristian Molina wanted to be a programmer since he saw the first games on an [At
 
 The other big passion he has is _running_. Most of his free time he's planing and training for his next ultra trail race.
 
-He is also a [vegan♥](https://en.wikipedia.org/wiki/Veganism) and a cat lover ♥.
+He is also a [vegan♥](https://en.wikipedia.org/wiki/Veganism) and a cat lover<i class="nes-icon is-small heart"></i>.
