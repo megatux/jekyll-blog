@@ -15,6 +15,7 @@ linkedin_url:  https://www.linkedin.com/in/molinacristian/
 markdown: kramdown
 
 # theme: jekyll-theme-architect
+theme: jekyll-theme-8bit
 
 social:
   twitter: https://twitter.com/megatux
