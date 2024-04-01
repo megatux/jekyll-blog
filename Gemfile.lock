@@ -86,5 +86,8 @@ DEPENDENCIES
   jekyll-compose
   jekyll-theme-8bit
 
+RUBY VERSION
+   ruby 3.3.0p0
+
 BUNDLED WITH
    2.5.7
