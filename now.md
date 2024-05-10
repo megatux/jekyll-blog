@@ -4,12 +4,13 @@ title: Now
 permalink: /now/
 ---
 
-(Last Update: May 2021)
+(Last Update: May 2024)
 
-* Running
-  * Training for the next trail marathon in Cordoba due to September 2021.
-* IT
-  * Learning [Flutter](https://flutter.dev).
-  * Learning [Crystal](https://crystal-lang.org/).  
-  * Learning [Jekyll](https://jekyllrb.com/) blog system (this thing!).
-  * Learning Arch/[Manjaro](https://manjaro.org) Linux distro idiosyncrasies.
+* Running:
+  * Recovering from some injuries in tendons and a small surgery on knee.
+  * Training for the next ultra trail in Merlo, San Luis, due to November 2024.
+* IT:
+  * Learning [DragonRuby Game Toolkit](https://dragonruby.org/toolkit/game).
+  * Web Dev:
+    * [Phlex](https://www.phlex.fun/) for Ruby views.
+	* [HTMX](https://htmx.org/) for HTML over the wire.
