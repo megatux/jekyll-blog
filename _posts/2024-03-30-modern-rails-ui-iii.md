@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding lazy loading of items using htmx
+title: Adding an inline delete action on the listing page
 date: 2024-03-30 12:34 -0300
 tags: webdev ruby rails tailwindcss phlex htmx
 ---
