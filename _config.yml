@@ -18,7 +18,8 @@ plugins:
   - jekyll-gist
 
 # theme: jekyll-theme-architect
-theme: jekyll-theme-8bit
+# theme: jekyll-theme-8bit
+remote_theme: julianolf/jekyll-theme-8bit
 
 social:
   twitter: https://twitter.com/megatux
