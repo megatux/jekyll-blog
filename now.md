@@ -4,13 +4,13 @@ title: Now
 permalink: /now/
 ---
 
-(Last Update: March 2025)
+(Last Update: July 2025)
 
 * Running:
-  * Recovering from some injuries in tendons and a small surgery on left knee.
-  * Training for the next ultra trail in San Javier, Córdoba, due to May 2025.
+  * Recovering from some injuries in Aquiles tendons and a small surgery on left knee.
+  * Training for the next short trail running races (two 25km races).
 * IT:
-  * Learning [DragonRuby Game Toolkit](https://dragonruby.org/toolkit/game).
+  * Building a prototype for an event reservation web application with Rails, Phlex, Datastar, Sqlite, Render.io.
   * Web Dev:
     * [Phlex](https://www.phlex.fun/) for Ruby views.
-	* [HTMX](https://htmx.org/) for HTML over the wire.
+	  * [Datastar](https://data-star.dev/) hypermedia framework.
