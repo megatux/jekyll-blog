@@ -4,13 +4,13 @@ title: Now
 permalink: /now/
 ---
 
-(Last Update: July 2025)
+(Last Update: September 2026)
 
 * Running:
-  * Recovering from some injuries in Aquiles tendons and a small surgery on left knee.
-  * Training for the next short trail running races (two 25km races).
+  * Recovering from some injuries on knees.
+  * Training for the next ultra trail (110km).
 * IT:
-  * Building a prototype for an event reservation web application with Rails, Phlex, Datastar, Sqlite, Render.io.
+  * Founder of [carreras.run](https://carreras.run), an event reservation web application with Rails, Phlex, Datastar, Sqlite, Nats.io.
   * Web Dev:
     * [Phlex](https://www.phlex.fun/) for Ruby views.
 	  * [Datastar](https://data-star.dev/) hypermedia framework.
